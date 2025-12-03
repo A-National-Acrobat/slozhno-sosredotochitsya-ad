@@ -110,11 +110,14 @@
   align-self: center;
 }
 
+
 .header__text {
   align-self: center;
   justify-self: end;
   max-inline-size: 355px;
   margin-block-start: var(--gap);
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 .content {
@@ -122,3 +125,32 @@
   gap: 50px;
   padding: 40px var(--section-padding);
 }
+
+.content__title {
+  color: var(--section-title-color);
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.content__grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.content__card,
+.advice {
+  display: grid;
+  gap: var(--gap-small);
+}
+
+.content__card-title,
+.advice__title {
+  font-size: inherit;
+  margin-block-end: var(--gap-small);
+}
+
+.content__card-text,
+.advice__text p {
+  margin-block-end: var(--gap-small);
+}
+
