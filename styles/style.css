@@ -200,6 +200,23 @@ a {
   color: inherit;
 }
 
+.link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 .gallery {
   display: grid;
   gap: var(--gap);
